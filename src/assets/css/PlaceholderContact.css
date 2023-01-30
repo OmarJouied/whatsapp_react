@@ -1,0 +1,57 @@
+.placeholder__container {
+    height: 100%;
+    padding: 28px 0;
+    background: #222e35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.placeholder__container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3px;
+    background: #046a62;
+    width: calc(100% - 6px);
+}
+.placeholder__content {
+    width: min(560px, 100%);
+    margin-top: -20px;
+    text-align: center;
+    padding: 1rem;
+}
+.placeholder__content div {
+    height: 205.69px;
+}
+.placeholder__content div svg {
+    max-width: 100%;
+}
+.placeholder__content h1 {
+    margin-top: 40px;
+    font-weight: 300;
+    line-height: 37.5px;
+    color: #e9edefe0;
+}
+.placeholder__content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 16px;
+    color: var(--aside-filter);
+}
+.placeholder__content > span {
+    font-size: 14px;
+    color: #667781;
+    align-items: end;
+    line-height: 14px;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+    transform: translate(-50%);
+    left: 50%;
+}
+.placeholder__content span {
+    display: flex;
+}

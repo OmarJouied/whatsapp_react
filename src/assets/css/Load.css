@@ -1,0 +1,15 @@
+.loading {
+    border: 6px solid var(--background-user);
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+    width: 4rem;
+    display: block;
+    height: 4rem;
+    border-top-color: var(--background-transparent);
+    margin: 5rem auto;
+}
+@keyframes rotate {
+    to {
+        transform: rotateZ(360deg);
+    }
+}

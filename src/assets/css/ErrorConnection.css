@@ -1,0 +1,57 @@
+.connection-error {
+    background-color: var(--background-item-hover);
+    padding: 13px 12px 14px 13px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.connection-error div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--aside-filter);
+    height: 80px;
+}
+
+.connection-error h3 {
+    color: #e9edef;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 21px;
+}
+
+.connection-error p {
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.connection-error button {
+    background-color: var(--background-transparent);
+    border: 0;
+    color: var(--aside-filter);
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 5px;
+}
+
+.connection-error button:hover {
+    text-decoration: underline;
+}
+
+.connection-error span {
+    color: #ffbc38;
+    height: 48px;
+    min-width: 49px;
+}
+
+@media (max-width: 780px) {
+    .connection-error {
+        flex-direction: column;
+        gap: 7px;
+    }
+}

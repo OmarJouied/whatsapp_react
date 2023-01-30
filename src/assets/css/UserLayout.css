@@ -1,0 +1,15 @@
+.user__shortcat-info_name {
+    color: var(--text-color);
+    font-size: 17px;
+    line-height: 21px;
+    flex: 1;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.user__avatar {
+    padding: 0 15px 0 13px;
+    display: flex;
+    align-items: center;
+    margin-top: -1px;
+    width: 77px;
+}

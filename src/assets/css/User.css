@@ -1,0 +1,71 @@
+.user {
+    display: flex;
+    cursor: pointer;
+    height: 72px;
+}
+a:not(.active) .user:hover {
+    background-color: #202c33;
+}
+.user__shortcat {
+    padding: 15px;
+    flex: 1;
+    width: 77px;
+    border-top: 1px solid var(--border-color);
+}
+a:not(.active) .user:hover .user__shortcat {
+    border-top-color: #202c33;
+}
+.user__shortcat-info {
+    display: flex;
+    justify-content: space-between;
+    height: 23px;
+}
+.user__shortcat-info_date {
+    margin-top: 3px;
+    line-height: 14px;
+    font-size: 12px;
+    color: var(--aside-filter);
+}
+.user__shortcat-message {
+    display: flex;
+    color: var(--aside-filter);
+    position: relative;
+    justify-content: space-between;
+}
+.user__shortcat-message_text {
+    margin-top: 2px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+.user__shortcat-message_count {
+    font-size: .5rem;
+    font-weight: 500;
+    min-width: 20px;
+    background: var(--top-background-color);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bottom-background-color);
+    padding: 0 3px;
+    height: 20px;
+    margin-left: 6px;
+}
+.arrow {
+    height: 20px;
+    display: block;
+    margin: 0;
+    transition: 0s ease-out;
+    width: 0;
+    overflow: hidden;
+}
+.user:hover .arrow {
+    transition: .1s ease-out, margin 0s;
+    width: 20px;
+    margin: 0 4px;
+}
